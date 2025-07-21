@@ -5,7 +5,6 @@
 ---
 
 ## 📌 Overview
-[![Watch the video](demo-thumbnail.png)](https://www.youtube.com/watch?v=loO_aYronZI&t=5s)
 
 **Meeting Whisperer** is an intelligent assistant that automates the end-to-end workflow of:
 
@@ -33,7 +32,7 @@ The project is built using [**MCP (Model Context Protocol)**](https://modelconte
 ---
 
 ## 📁 Project Structure
-
+```text
 MeetingWhisperer/
 ├── streamlit_ui.py            ← Main Streamlit frontend
 ├── summarize_utils.py         ← GPT summarization logic
@@ -43,7 +42,7 @@ MeetingWhisperer/
 ├── token.json                 ← Creator's calendar token
 ├── tokens/                    ← Folder containing participant tokens (e.g., tokens/email1.json)
 ├── .env                       ← Contains your OpenAI API key
-
+```
 ---
 
 ## 🛠️ Setup Instructions
@@ -128,13 +127,3 @@ uv run streamlit run ui.py
 Introduced November 2024 by Anthropic as an open-source protocol, MCP allows for the integration between LLM applications and external data sources and tools.
 
 In this project, calendar scheduling and holiday detection are offloaded to **dedicated MCP tool servers** — making the system highly modular and extensible.
-
----
-
-## 👩‍💻 Author
-
-### Anamika Bharali
-M.S. in Information Systems, Northeastern University
-Data Scientist | AI Automation | NLP
-
-🌐 LinkedIn: https://www.linkedin.com/in/anamikabharali/ 
